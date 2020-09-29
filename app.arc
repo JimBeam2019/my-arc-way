@@ -1,7 +1,7 @@
 @app
 init
 
-@ws
+# @ws
 
 @scheduled
 check-me rate(1 minute)
@@ -14,6 +14,7 @@ get /
 get /about
 get /post/:postId
 post /login
+post /subsets
 
 # @aws
 # profile default
