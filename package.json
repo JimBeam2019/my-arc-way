@@ -1,0 +1,41 @@
+{
+  "name": "my-arc-way",
+  "version": "1.0.0",
+  "description": "Architect Example",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JimBeam2019/my-arc-way.git"
+  },
+  "keywords": [
+    "Architect"
+  ],
+  "author": "J.L.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JimBeam2019/my-arc-way/issues"
+  },
+  "homepage": "https://github.com/JimBeam2019/my-arc-way#readme",
+  "dependencies": {
+    "@architect/functions": "^3.13.3",
+    "aws-sdk": "^2.762.0"
+  },
+  "devDependencies": {
+    "@architect/eslint-config": "0.0.1",
+    "@babel/core": "^7.11.6",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-transform-runtime": "^7.11.5",
+    "@babel/preset-env": "^7.11.5",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.10.0",
+    "eslint-config-prettier": "^6.12.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-prefer-arrow": "^1.2.2",
+    "eslint-plugin-standard": "^4.0.1",
+    "nyc": "^15.1.0",
+    "prettier": "^2.1.2"
+  }
+}
