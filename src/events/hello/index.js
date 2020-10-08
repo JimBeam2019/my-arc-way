@@ -1,5 +1,15 @@
 // learn more about event functions here: https://arc.codes/primitives/events
-exports.handler = async function subscribe (event) {
-  console.log(JSON.stringify(event, null, 2))
-  return
+const arc = require('@architect/functions');
+
+/**
+ *
+ *
+ * @param {*} event
+ * @returns
+ */
+async function helloEvent(event) {
+  console.log('Hello event:', JSON.stringify(event, null, 2));
+  return true;
 }
+
+exports.handler = arc.events.subscribe(helloEvent);

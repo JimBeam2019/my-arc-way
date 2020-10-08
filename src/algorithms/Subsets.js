@@ -33,20 +33,20 @@ class Subsets {
    *
    *
    * @param {number} [nextIndex=0]
-   * @param {array} [subSet=[]]
+   * @param {array} [tempSubSets=[]]
    * @memberof Subsets
    */
-  calcSubsets(nextIndex = 0, subSet = []) {
+  calcSubsets(nextIndex = 0, tempSubSets = []) {
     if (nextIndex < this.nums.length) {
-      this.calcSubsets(nextIndex + 1, subSet);
+      this.calcSubsets(nextIndex + 1, tempSubSets);
 
-      const newSubSet = [...subSet];
+      const newSubSets = [...tempSubSets];
 
-      newSubSet.push(this.nums[nextIndex]);
+      newSubSets.push(this.nums[nextIndex]);
 
-      this.calcSubsets(nextIndex + 1, newSubSet);
+      this.calcSubsets(nextIndex + 1, newSubSets);
     } else {
-      this.subSets.push(subSet);
+      this.subSets.push(tempSubSets);
     }
   }
 }
