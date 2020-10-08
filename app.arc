@@ -13,8 +13,10 @@ hello
 get /
 get /about
 get /post/:postId
+get /hello
 post /login
 post /subsets
+post /hello
 
 # @aws
 # profile default
